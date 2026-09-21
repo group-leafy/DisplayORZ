@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A lightweight macOS menu bar utility to soft-disconnect specific external displays with a single click—no cable unplugging required.">
+  <title>DisplayORZ</title>
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <img class="hero-icon" src="assets/icon.png" alt="DisplayORZ app icon" width="132" height="132">
+      <h1 class="hero-name">DisplayORZ</h1>
+      <p class="hero-subtitle">A lightweight macOS menu bar utility to software-disable (soft-disconnect) specific external displays with a single click—no cable unplugging required.</p>
+      <!-- TODO: download link pending, leave empty for now -->
+      <a class="btn-download" href="#">Download DisplayORZ</a>
+    </section>
+
+    <section class="shots" aria-label="Screenshots">
+      <div class="shots-scroller">
+        <div class="shots-track">
+          <img src="assets/shots/shots0.png" alt="DisplayORZ screenshot" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <article class="article">
+        <h2>Why DisplayORZ?</h2>
+        <p>Unlike Windows (which offers a quick <code>Win + P</code> toggle), macOS lacks a native way to turn off output to a single display when multiple monitors are connected. The system only provides &quot;Extended Display&quot; or &quot;Mirror Display&quot;.</p>
+        <p>Simply dimming a display's brightness to zero leaves it active in macOS: your mouse cursor will still drift into the black screen, and windows will remain hidden in the invisible space.</p>
+        <p><strong>DisplayORZ</strong> solves this by using low-level display management APIs to <strong>soft-disconnect</strong> target monitors. The display immediately goes into standby mode, and macOS automatically relocates all windows back to your active screen.</p>
+
+        <h2>System Requirements</h2>
+        <ul>
+          <li><strong>macOS</strong>: 26.3 or later</li>
+        </ul>
+
+        <h2>Features</h2>
+        <ul>
+          <li><strong>One-Click Toggle</strong>: Software-disable or re-enable specific external displays directly from the menu bar.</li>
+          <li><strong>No Stray Cursors</strong>: Disabling a monitor removes it entirely from your macOS workspace—no mouse drift or lost windows.</li>
+          <li><strong>Built-in Safety</strong>: Prevents accidental lockouts by blocking the disabling of your sole active display or built-in screen.</li>
+          <li><strong>Native &amp; Lightweight</strong>: Built with Swift and SwiftUI. Minimal memory footprint with zero background CPU overhead.</li>
+          <li><strong>100% Free</strong>: No subscriptions, no ads, and no telemetry.</li>
+        </ul>
+
+        <h2>Installation</h2>
+        <ol>
+          <li>Download the latest <code>DisplayORZ.dmg</code>.</li>
+          <li>Drag <code>DisplayORZ.app</code> to your <code>Applications</code> folder.</li>
+          <li>Launch the app from the menu bar.</li>
+        </ol>
+
+        <h2>Support the Project</h2>
+        <p>DisplayORZ is completely free. If it saves you from the hassle of constantly pulling cables, consider supporting its development:</p>
+        <ul>
+          <li><a href="https://ko-fi.com/groupleafy" target="_blank" rel="noopener">Buy me a coffee on Ko-fi</a></li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">Copyright group.leafy All rights reserved</p>
+      <nav class="footer-links">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:group.leafy@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
