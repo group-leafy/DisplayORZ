@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一款輕量級 macOS 選單列工具，只需點一下即可軟體停用（軟性斷開）指定的外接顯示器——無需拔除線材。">
+  <title>DisplayORZ</title>
+  <link rel="canonical" href="https://group-leafy.github.io/DisplayORZ/zh-Hant/">
+  <link rel="alternate" hreflang="en" href="https://group-leafy.github.io/DisplayORZ/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://group-leafy.github.io/DisplayORZ/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://group-leafy.github.io/DisplayORZ/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://group-leafy.github.io/DisplayORZ/ja/">
+  <link rel="alternate" hreflang="es" href="https://group-leafy.github.io/DisplayORZ/es/">
+  <link rel="alternate" hreflang="pt-BR" href="https://group-leafy.github.io/DisplayORZ/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://group-leafy.github.io/DisplayORZ/pt-PT/">
+  <link rel="alternate" hreflang="ko" href="https://group-leafy.github.io/DisplayORZ/ko/">
+  <link rel="alternate" hreflang="fr" href="https://group-leafy.github.io/DisplayORZ/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://group-leafy.github.io/DisplayORZ/">
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/lang.js" defer></script>
+</head>
+<body>
+  <select class="lang-select" aria-label="語言">
+    <option value="../index.html" data-lang="en">English</option>
+    <option value="../zh-Hans/index.html" data-lang="zh-Hans">简体中文</option>
+    <option value="index.html" data-lang="zh-Hant" selected>繁體中文</option>
+    <option value="../ja/index.html" data-lang="ja">日本語</option>
+    <option value="../es/index.html" data-lang="es">Español</option>
+    <option value="../pt-BR/index.html" data-lang="pt-BR">Português (Brasil)</option>
+    <option value="../pt-PT/index.html" data-lang="pt-PT">Português (Portugal)</option>
+    <option value="../ko/index.html" data-lang="ko">한국어</option>
+    <option value="../fr/index.html" data-lang="fr">Français</option>
+  </select>
+
+<main>
+    <section class="hero">
+      <img class="hero-icon" src="../assets/icon.png" alt="DisplayORZ App 圖示" width="132" height="132">
+      <h1 class="hero-name">DisplayORZ</h1>
+      <p class="hero-subtitle">一款輕量級 macOS 選單列工具，只需點一下即可透過軟體方式停用（軟性斷開）指定的外接顯示器——不必拔掉任何線材。</p>
+      <a class="btn-download" href="https://github.com/group-leafy/DisplayORZ/releases/latest/download/DisplayORZ.dmg">下載 DisplayORZ</a>
+    </section>
+
+    <section class="shots" aria-label="螢幕截圖">
+      <div class="shots-scroller">
+        <div class="shots-track">
+          <img src="../assets/shots/shots0.png" alt="DisplayORZ 螢幕截圖" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <article class="article">
+        <h2>為什麼選擇 DisplayORZ？</h2>
+        <p>與 Windows（提供快捷的 <code>Win + P</code> 切換）不同，macOS 在連接多部顯示器時，並沒有關閉單一顯示器輸出的原生方式。系統只提供「延伸顯示器」或「鏡像顯示器」兩種選項。</p>
+        <p>只是把顯示器的亮度調到零，並不會讓它在 macOS 中停用：滑鼠指標仍會飄進黑畫面，視窗也會繼續藏在看不見的空間裡。</p>
+        <p><strong>DisplayORZ</strong> 透過底層顯示器管理 API 對目標顯示器執行<strong>軟性斷開</strong>來解決這個問題。顯示器會立即進入待機狀態，macOS 也會自動將所有視窗移回你使用中的螢幕。</p>
+
+        <h2>系統需求</h2>
+        <ul>
+          <li><strong>macOS</strong>：26.3 或以上版本，Apple 晶片</li>
+        </ul>
+
+        <h2>功能特色</h2>
+        <ul>
+          <li><strong>一鍵切換</strong>：直接從選單列軟體停用或重新啟用指定的外接顯示器。</li>
+          <li><strong>滑鼠不再亂飄</strong>：停用顯示器後，該螢幕會從 macOS 工作區完全移除——滑鼠不會飄進黑畫面，視窗也不會憑空消失。</li>
+          <li><strong>內建安全防護</strong>：禁止停用你唯一使用中的顯示器或內建螢幕，避免誤操作導致無螢幕可用。</li>
+          <li><strong>原生且輕量</strong>：以 Swift 與 SwiftUI 打造，記憶體占用極小，背景零 CPU 開銷。</li>
+          <li><strong>100% 免費</strong>：沒有訂閱、沒有廣告、沒有遙測。</li>
+        </ul>
+
+        <h2>安裝方式</h2>
+        <ol>
+          <li>下載最新的 <code>DisplayORZ.dmg</code>。</li>
+          <li>將 <code>DisplayORZ.app</code> 拖入「應用程式」資料夾。</li>
+          <li>從選單列啟動 App。</li>
+        </ol>
+
+        <h2>支持本專案</h2>
+        <p>DisplayORZ 完全免費。如果它讓你不必再反覆拔插線材，歡迎考慮支持它的開發：</p>
+        <ul>
+          <li><a href="https://ko-fi.com/groupleafy" target="_blank" rel="noopener">到 Ko-fi 請我喝杯咖啡</a></li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">Copyright group.leafy All rights reserved</p>
+      <nav class="footer-links">
+        <a href="terms.html">條款</a>
+        <a href="privacy.html">隱私</a>
+        <a href="mailto:group.leafy@gmail.com">聯絡我們</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Una utilidad ligera para la barra de menús de macOS que permite desactivar por software (desconexión lógica) monitores externos concretos con un solo clic, sin desenchufar cables.">
+  <title>DisplayORZ</title>
+  <link rel="canonical" href="https://group-leafy.github.io/DisplayORZ/es/">
+  <link rel="alternate" hreflang="en" href="https://group-leafy.github.io/DisplayORZ/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://group-leafy.github.io/DisplayORZ/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://group-leafy.github.io/DisplayORZ/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://group-leafy.github.io/DisplayORZ/ja/">
+  <link rel="alternate" hreflang="es" href="https://group-leafy.github.io/DisplayORZ/es/">
+  <link rel="alternate" hreflang="pt-BR" href="https://group-leafy.github.io/DisplayORZ/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://group-leafy.github.io/DisplayORZ/pt-PT/">
+  <link rel="alternate" hreflang="ko" href="https://group-leafy.github.io/DisplayORZ/ko/">
+  <link rel="alternate" hreflang="fr" href="https://group-leafy.github.io/DisplayORZ/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://group-leafy.github.io/DisplayORZ/">
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/lang.js" defer></script>
+</head>
+<body>
+  <select class="lang-select" aria-label="Idioma">
+    <option value="../index.html" data-lang="en">English</option>
+    <option value="../zh-Hans/index.html" data-lang="zh-Hans">简体中文</option>
+    <option value="../zh-Hant/index.html" data-lang="zh-Hant">繁體中文</option>
+    <option value="../ja/index.html" data-lang="ja">日本語</option>
+    <option value="index.html" data-lang="es" selected>Español</option>
+    <option value="../pt-BR/index.html" data-lang="pt-BR">Português (Brasil)</option>
+    <option value="../pt-PT/index.html" data-lang="pt-PT">Português (Portugal)</option>
+    <option value="../ko/index.html" data-lang="ko">한국어</option>
+    <option value="../fr/index.html" data-lang="fr">Français</option>
+  </select>
+
+<main>
+    <section class="hero">
+      <img class="hero-icon" src="../assets/icon.png" alt="Icono de la app DisplayORZ" width="132" height="132">
+      <h1 class="hero-name">DisplayORZ</h1>
+      <p class="hero-subtitle">Una utilidad ligera para la barra de menús de macOS con la que puedes desactivar por software (desconexión lógica) monitores externos concretos con un solo clic, sin desenchufar ningún cable.</p>
+      <a class="btn-download" href="https://github.com/group-leafy/DisplayORZ/releases/latest/download/DisplayORZ.dmg">Descargar DisplayORZ</a>
+    </section>
+
+    <section class="shots" aria-label="Capturas de pantalla">
+      <div class="shots-scroller">
+        <div class="shots-track">
+          <img src="../assets/shots/shots0.png" alt="Captura de pantalla de DisplayORZ" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <article class="article">
+        <h2>¿Por qué DisplayORZ?</h2>
+        <p>A diferencia de Windows (que ofrece el rápido atajo <code>Win + P</code>), macOS no cuenta con una forma nativa de desactivar la salida hacia una sola pantalla cuando hay varios monitores conectados. El sistema solo ofrece «Pantalla extendida» o «Pantalla duplicada».</p>
+        <p>Bajar el brillo de una pantalla a cero no la desactiva en macOS: el cursor del ratón seguirá entrando en la pantalla negra y las ventanas seguirán ocultas en ese espacio invisible.</p>
+        <p><strong>DisplayORZ</strong> lo resuelve utilizando APIs de gestión de pantallas de bajo nivel para <strong>desconectar de forma lógica</strong> los monitores seleccionados. La pantalla pasa inmediatamente al modo de espera y macOS reubica automáticamente todas las ventanas en tu pantalla activa.</p>
+
+        <h2>Requisitos del sistema</h2>
+        <ul>
+          <li><strong>macOS</strong>: 26.3 o posterior, Apple silicon</li>
+        </ul>
+
+        <h2>Características</h2>
+        <ul>
+          <li><strong>Alternar con un clic</strong>: desactiva o reactiva por software monitores externos concretos directamente desde la barra de menús.</li>
+          <li><strong>Sin cursores perdidos</strong>: al desactivar un monitor, este desaparece por completo de tu espacio de trabajo de macOS; el ratón no se desvía a la pantalla negra ni pierdes ventanas.</li>
+          <li><strong>Seguridad integrada</strong>: evita bloqueos accidentales al impedir la desactivación de tu única pantalla activa o de la pantalla integrada.</li>
+          <li><strong>Nativo y ligero</strong>: desarrollado con Swift y SwiftUI. Uso mínimo de memoria y ningún consumo de CPU en segundo plano.</li>
+          <li><strong>100 % gratis</strong>: sin suscripciones, sin anuncios y sin telemetría.</li>
+        </ul>
+
+        <h2>Instalación</h2>
+        <ol>
+          <li>Descarga la última versión de <code>DisplayORZ.dmg</code>.</li>
+          <li>Arrastra <code>DisplayORZ.app</code> a la carpeta <code>Aplicaciones</code>.</li>
+          <li>Inicia la app desde la barra de menús.</li>
+        </ol>
+
+        <h2>Apoya el proyecto</h2>
+        <p>DisplayORZ es completamente gratis. Si te ahorra la molestia de estar desenchufando cables, considera apoyar su desarrollo:</p>
+        <ul>
+          <li><a href="https://ko-fi.com/groupleafy" target="_blank" rel="noopener">Invítame a un café en Ko-fi</a></li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">Copyright group.leafy All rights reserved</p>
+      <nav class="footer-links">
+        <a href="terms.html">Términos</a>
+        <a href="privacy.html">Privacidad</a>
+        <a href="mailto:group.leafy@gmail.com">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ケーブルを抜かずに、ワンクリックで特定の外付けディスプレイをソフト的に無効化（ソフト切断）できる、軽量な macOS メニューバーユーティリティ。">
+  <title>DisplayORZ</title>
+  <link rel="canonical" href="https://group-leafy.github.io/DisplayORZ/ja/">
+  <link rel="alternate" hreflang="en" href="https://group-leafy.github.io/DisplayORZ/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://group-leafy.github.io/DisplayORZ/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://group-leafy.github.io/DisplayORZ/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://group-leafy.github.io/DisplayORZ/ja/">
+  <link rel="alternate" hreflang="es" href="https://group-leafy.github.io/DisplayORZ/es/">
+  <link rel="alternate" hreflang="pt-BR" href="https://group-leafy.github.io/DisplayORZ/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://group-leafy.github.io/DisplayORZ/pt-PT/">
+  <link rel="alternate" hreflang="ko" href="https://group-leafy.github.io/DisplayORZ/ko/">
+  <link rel="alternate" hreflang="fr" href="https://group-leafy.github.io/DisplayORZ/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://group-leafy.github.io/DisplayORZ/">
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/lang.js" defer></script>
+</head>
+<body>
+  <select class="lang-select" aria-label="言語">
+    <option value="../index.html" data-lang="en">English</option>
+    <option value="../zh-Hans/index.html" data-lang="zh-Hans">简体中文</option>
+    <option value="../zh-Hant/index.html" data-lang="zh-Hant">繁體中文</option>
+    <option value="index.html" data-lang="ja" selected>日本語</option>
+    <option value="../es/index.html" data-lang="es">Español</option>
+    <option value="../pt-BR/index.html" data-lang="pt-BR">Português (Brasil)</option>
+    <option value="../pt-PT/index.html" data-lang="pt-PT">Português (Portugal)</option>
+    <option value="../ko/index.html" data-lang="ko">한국어</option>
+    <option value="../fr/index.html" data-lang="fr">Français</option>
+  </select>
+
+<main>
+    <section class="hero">
+      <img class="hero-icon" src="../assets/icon.png" alt="DisplayORZ アプリアイコン" width="132" height="132">
+      <h1 class="hero-name">DisplayORZ</h1>
+      <p class="hero-subtitle">ケーブルを抜くことなく、ワンクリックで特定の外付けディスプレイをソフト的に無効化（ソフト切断）できる、軽量な macOS メニューバーユーティリティです。</p>
+      <a class="btn-download" href="https://github.com/group-leafy/DisplayORZ/releases/latest/download/DisplayORZ.dmg">DisplayORZ をダウンロード</a>
+    </section>
+
+    <section class="shots" aria-label="スクリーンショット">
+      <div class="shots-scroller">
+        <div class="shots-track">
+          <img src="../assets/shots/shots0.png" alt="DisplayORZ のスクリーンショット" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <article class="article">
+        <h2>DisplayORZ が選ばれる理由</h2>
+        <p>Windows には素早い <code>Win + P</code> による切替がありますが、macOS には複数のモニターを接続しているときに特定のディスプレイへの出力だけをオフにするネイティブな方法がありません。システムが提供するのは「拡張ディスプレイ」または「ミラーリング」だけです。</p>
+        <p>ディスプレイの明るさをゼロに下げても、macOS 上ではその画面が有効なままです。マウスカーソルは黒い画面に迷い込み、ウィンドウは見えない領域に隠れたままになります。</p>
+        <p><strong>DisplayORZ</strong> は低レベルなディスプレイ管理 API を使って対象モニターを<strong>ソフト切断</strong>することで、この問題を解決します。ディスプレイはすぐにスタンバイ状態へ移行し、macOS が開いているすべてのウィンドウを使用中の画面へ自動的に移動します。</p>
+
+        <h2>動作環境</h2>
+        <ul>
+          <li><strong>macOS</strong>：26.3 以降、Apple silicon</li>
+        </ul>
+
+        <h2>主な機能</h2>
+        <ul>
+          <li><strong>ワンクリックで切替</strong>：メニューバーから直接、特定の外付けディスプレイをソフト的に無効化／再有効化できます。</li>
+          <li><strong>カーソルの迷い込みなし</strong>：ディスプレイを無効化すると、その画面は macOS のワークスペースから完全に除外されます。カーソルが黒い画面に迷い込んだり、ウィンドウが見えない場所に隠れたりすることがありません。</li>
+          <li><strong>安全機構を内蔵</strong>：使用中のディスプレイが 1 台だけの場合や内蔵ディスプレイの無効化をブロックし、誤操作によるロックアウトを防ぎます。</li>
+          <li><strong>ネイティブで軽量</strong>：Swift と SwiftUI で構築。メモリ使用量は最小限で、バックグラウンドの CPU 負荷はゼロです。</li>
+          <li><strong>完全無料</strong>：サブスクリプション、広告、テレメトリーは一切ありません。</li>
+        </ul>
+
+        <h2>インストール</h2>
+        <ol>
+          <li>最新の <code>DisplayORZ.dmg</code> をダウンロードします。</li>
+          <li><code>DisplayORZ.app</code> を「アプリケーション」フォルダにドラッグします。</li>
+          <li>メニューバーからアプリを起動します。</li>
+        </ol>
+
+        <h2>プロジェクトを支援する</h2>
+        <p>DisplayORZ は完全に無料です。ケーブルの抜き差しから解放されたなら、開発の支援をご検討ください：</p>
+        <ul>
+          <li><a href="https://ko-fi.com/groupleafy" target="_blank" rel="noopener">Ko-fi でコーヒーをおごる</a></li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">Copyright group.leafy All rights reserved</p>
+      <nav class="footer-links">
+        <a href="terms.html">利用規約</a>
+        <a href="privacy.html">プライバシー</a>
+        <a href="mailto:group.leafy@gmail.com">お問い合わせ</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

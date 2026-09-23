@@ -207,9 +207,45 @@ a:hover { text-decoration: none; }
   text-decoration: underline;
 }
 
+/* ---------- Language selector (top-right) ---------- */
+.lang-select {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 100;
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  color: var(--text);
+  background: #fff url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%236e6e73' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 10px center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 30px 6px 12px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.lang-select:hover { border-color: var(--text-secondary); }
+
+.lang-select:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+}
+
 /* ---------- Mobile ---------- */
 @media (max-width: 640px) {
-  .hero { padding-top: 40px; }
+  .hero { padding-top: 64px; }
+
+  .header-inner { padding-top: 44px; }
+
+  .lang-select {
+    top: 10px;
+    right: 10px;
+    font-size: 0.8rem;
+    padding: 4px 26px 4px 10px;
+  }
 
   .hero-icon { width: 104px; height: 104px; border-radius: 22px; }
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Um utilitário leve para a barra de menus do macOS que permite desativar por software (desconexão lógica) monitores externos específicos com um único clique, sem ter de desligar cabos.">
+  <title>DisplayORZ</title>
+  <link rel="canonical" href="https://group-leafy.github.io/DisplayORZ/pt-PT/">
+  <link rel="alternate" hreflang="en" href="https://group-leafy.github.io/DisplayORZ/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://group-leafy.github.io/DisplayORZ/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://group-leafy.github.io/DisplayORZ/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://group-leafy.github.io/DisplayORZ/ja/">
+  <link rel="alternate" hreflang="es" href="https://group-leafy.github.io/DisplayORZ/es/">
+  <link rel="alternate" hreflang="pt-BR" href="https://group-leafy.github.io/DisplayORZ/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://group-leafy.github.io/DisplayORZ/pt-PT/">
+  <link rel="alternate" hreflang="ko" href="https://group-leafy.github.io/DisplayORZ/ko/">
+  <link rel="alternate" hreflang="fr" href="https://group-leafy.github.io/DisplayORZ/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://group-leafy.github.io/DisplayORZ/">
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/lang.js" defer></script>
+</head>
+<body>
+  <select class="lang-select" aria-label="Idioma">
+    <option value="../index.html" data-lang="en">English</option>
+    <option value="../zh-Hans/index.html" data-lang="zh-Hans">简体中文</option>
+    <option value="../zh-Hant/index.html" data-lang="zh-Hant">繁體中文</option>
+    <option value="../ja/index.html" data-lang="ja">日本語</option>
+    <option value="../es/index.html" data-lang="es">Español</option>
+    <option value="../pt-BR/index.html" data-lang="pt-BR">Português (Brasil)</option>
+    <option value="index.html" data-lang="pt-PT" selected>Português (Portugal)</option>
+    <option value="../ko/index.html" data-lang="ko">한국어</option>
+    <option value="../fr/index.html" data-lang="fr">Français</option>
+  </select>
+
+<main>
+    <section class="hero">
+      <img class="hero-icon" src="../assets/icon.png" alt="Ícone da app DisplayORZ" width="132" height="132">
+      <h1 class="hero-name">DisplayORZ</h1>
+      <p class="hero-subtitle">Um utilitário leve para a barra de menus do macOS que permite desativar por software (desconexão lógica) monitores externos específicos com um único clique — sem ter de desligar qualquer cabo.</p>
+      <a class="btn-download" href="https://github.com/group-leafy/DisplayORZ/releases/latest/download/DisplayORZ.dmg">Transferir DisplayORZ</a>
+    </section>
+
+    <section class="shots" aria-label="Capturas de ecrã">
+      <div class="shots-scroller">
+        <div class="shots-track">
+          <img src="../assets/shots/shots0.png" alt="Captura de ecrã do DisplayORZ" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <article class="article">
+        <h2>Porquê o DisplayORZ?</h2>
+        <p>Ao contrário do Windows (que oferece o rápido atalho <code>Win + P</code>), o macOS não dispõe de uma forma nativa de desligar a saída para um único ecrã quando estão ligados vários monitores. O sistema apenas oferece «Ecrã Expandido» ou «Ecrã Espelhado».</p>
+        <p>Baixar o brilho de um ecrã para zero não o desativa no macOS: o cursor do rato continuará a entrar no ecrã preto e as janelas permanecerão ocultas nesse espaço invisível.</p>
+        <p>O <strong>DisplayORZ</strong> resolve-o através de APIs de baixo nível de gestão de ecrãs para <strong>desconectar por software</strong> os monitores visados. O ecrã entra imediatamente em modo de espera e o macOS relocaliza automaticamente todas as janelas para o seu ecrã ativo.</p>
+
+        <h2>Requisitos de sistema</h2>
+        <ul>
+          <li><strong>macOS</strong>: 26.3 ou posterior, Apple silicon</li>
+        </ul>
+
+        <h2>Funcionalidades</h2>
+        <ul>
+          <li><strong>Alternar com um clique</strong>: desative ou reative por software monitores externos específicos diretamente a partir da barra de menus.</li>
+          <li><strong>Sem cursores perdidos</strong>: ao desativar um monitor, este é removido por completo do seu espaço de trabalho no macOS — sem o rato a desviar-se para o ecrã preto e sem janelas perdidas.</li>
+          <li><strong>Segurança integrada</strong>: impede bloqueios acidentais ao bloquear a desativação do seu único ecrã ativo ou do ecrã integrado.</li>
+          <li><strong>Nativo e leve</strong>: desenvolvido com Swift e SwiftUI. Utilização mínima de memória e zero consumo de CPU em segundo plano.</li>
+          <li><strong>100% gratuito</strong>: sem subscrições, sem anúncios e sem telemetria.</li>
+        </ul>
+
+        <h2>Instalação</h2>
+        <ol>
+          <li>Transfira o <code>DisplayORZ.dmg</code> mais recente.</li>
+          <li>Arraste o <code>DisplayORZ.app</code> para a pasta <code>Aplicações</code>.</li>
+          <li>Inicie a aplicação a partir da barra de menus.</li>
+        </ol>
+
+        <h2>Apoie o projeto</h2>
+        <p>O DisplayORZ é completamente gratuito. Se lhe poupar o incómodo de andar sempre a desligar cabos, considere apoiar o desenvolvimento:</p>
+        <ul>
+          <li><a href="https://ko-fi.com/groupleafy" target="_blank" rel="noopener">Ofereça-me um café no Ko-fi</a></li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">Copyright group.leafy All rights reserved</p>
+      <nav class="footer-links">
+        <a href="terms.html">Termos</a>
+        <a href="privacy.html">Privacidade</a>
+        <a href="mailto:group.leafy@gmail.com">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
